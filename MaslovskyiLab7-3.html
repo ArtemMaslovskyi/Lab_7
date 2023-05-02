@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7.3</title>
+    <style>
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+        .formData{
+            display: grid;
+            grid-template-columns: 40px 0.3fr 1fr;
+        }
+        input{
+            height: 70%;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Анкета</h2>
+        <div class="formData">
+            <p>1.</p>
+            <p>Прізвище</p>
+            <input type="text" name="name">
+
+            <p>2.</p>
+            <p>Ім'я, по батькові</p>
+            <input type="text" name="name">
+
+            <p>3.</p>
+            <p>Число і рік народження</p>
+            <input type="date" name="date">
+
+            <p>4.</p>
+            <p>Домашня адреса</p>
+            <input type="text" name="adress">
+
+            <p>5.</p>
+            <p>Місце навчання</p>
+            <input type="text" name="placeOfStudy">
+
+            <p>6.</p>
+            <p>Домашній(робочий) телефон</p>
+            <input type="tel" name="telephone">
+
+            <p>7.</p>
+            <p>E-mail</p>
+            <input type="email" name="email">
+
+            <p>8.</p>
+            <p>область наукових інтересів</p>
+            <div style="display: flex; flex-direction: column;">
+                <ol>
+                    <li><input type="text" name="science"></li>
+                    <li><input type="text" name="science"></li>
+                    <li><input type="text" name="science"></li>
+                    <li><input type="text" name="science"></li>
+                    <li><input type="text" name="science"></li>
+                    <li><input type="text" name="science"></li>
+                </ol>
+            </div>
+        </div>
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>

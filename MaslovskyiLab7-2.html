@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7.2</title>
+    <style>
+		form {
+			margin: 0 auto;
+			width: 50%;
+		}
+
+        h2{
+            display: flex;
+            justify-content: center;
+        }
+
+		label, input {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="submit"] {
+			margin-top: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			cursor: pointer;
+            transition: 0.5s;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+    <h2>My form</h2>
+
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message"></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
